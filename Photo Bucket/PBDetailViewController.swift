@@ -15,6 +15,7 @@ class PBDetailViewController: UIViewController {
     var pbRef: DocumentReference!
     var pbListener: ListenerRegistration!
     var pb: PB?
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         pbListener = pbRef.addSnapshotListener { documentSnapshot, error in
